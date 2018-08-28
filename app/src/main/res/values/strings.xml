@@ -1,0 +1,194 @@
+<resources>
+    <string name="app_name" translatable="false">ProximityIndexer</string>
+    <string name="app_name2" translatable="false">PIndexer</string>
+    <!--sign up and log in page-->
+    <string name="login_image_description" translatable="true">Logo</string>
+    <string name="login_text" translatable="true">LOGIN</string>
+    <string name="signup_text" translatable="true">SIGN UP</string>
+    <string name="signup_login_question" translatable="true">Are you a simple user?</string>
+    <string name="login_to_go_back" translatable="true">Do you want to go back?</string>
+    <string name="signup_login_click_here" translatable="true">Click here</string>
+    <string name="submit">SUBMIT</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="drawerMenu">
+        <item>Login/SignUp</item>
+        <item>My Sites</item>
+        <item>My Account</item>
+        <item>Find Me</item>
+        <item>Help &amp; Feedback</item>
+        <item>Settings</item>
+        <item>About</item>
+    </string-array>
+    <string-array name="drawerMenuDescription">
+        <item>Create/Access your account</item>
+        <item>View and edit your sites</item>
+        <item>View and manage account info</item>
+        <item>Share location/receive one\'s location</item>
+        <item>Get help and support from us</item>
+        <item>Customize your experience</item>
+        <item>About PIndexer</item>
+
+    </string-array>
+    <string name="title_activity_sites">Sites</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_domains_user_create">domains_user_create</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <!-- todo: remove the following at the end.  these are the domains -->
+    <string-array name="domainMenu">
+        <item>Buy something</item>
+        <item>Technician</item>
+        <item>School</item>
+        <item>Hospital</item>
+        <item>Clinic</item>
+        <item>Petrol Station</item>
+        <item>Orange Center</item>
+        <item>Orange Money</item>
+        <item>Mtn Center</item>
+        <item>Mtn Mobile Money</item>
+        <item>Camtel center</item>
+        <item>Pharmacy</item>
+        <item>Hotel</item>
+        <item>Restaurant</item>
+        <item>Bar</item>
+        <item>Nexttel Center</item>
+        <item>Hair Dressing Salon</item>
+        <item>Home</item>
+        <item>Room</item>
+        <item>Hall to let</item>
+        <item>Stadium</item>
+        <item>Land on sale</item>
+        <item>Bakery</item>
+        <item>Travel Agency</item>
+        <item>Radio Station</item>
+        <item>Police agency</item>
+        <item>Gymn</item>
+        <item>Dry Cleaning</item>
+        <item>Library</item>
+        <item>Cyber Cafe</item>
+        <item>Decor Shop</item>
+        <item>Mechanic</item>
+        <item>Post Office</item>
+        <item>Herbalist</item>
+        <item>Car wash</item>
+        <item>Musuem</item>
+        <item>Motel</item>
+        <item>Shaving Salon</item>
+    </string-array>
+
+
+    <string-array name="domainMenuDescription">
+        <item>Closest place to buy something </item>
+        <item>Closest Technician shops</item>
+        <item>Closest academic institutions</item>
+        <item>Closest health institutions</item>
+        <item>Closest clinics</item>
+        <item>Closest Petrol Stations</item>
+        <item>Closest Orange Client services</item>
+        <item>Closest Orange Money Spots</item>
+        <item>Closest Mtn Client services</item>
+        <item>Closest Mtn Mobile Money spots</item>
+        <item>Closest Camtel client services</item>
+        <item>Closest Pharmacies</item>
+        <item>Closest Hotels</item>
+        <item>Closest Restaurants</item>
+        <item>Closest Bars</item>
+        <item>Closest Nexttel Client services</item>
+        <item>Closest Hair Dressing Salons</item>
+        <item>Closest Homes on rent</item>
+        <item>Closest Rooms to let</item>
+        <item>Closest Occasion Halls to let</item>
+        <item>Closest Stadiums</item>
+        <item>Closest Lands on sale</item>
+        <item>Closest Bakeries</item>
+        <item>Closest Travel Agencies</item>
+        <item>Closest Radio Stations</item>
+        <item>Closest Police agencies</item>
+        <item>Closest Gymns</item>
+        <item>Closest Dry Cleaning centers</item>
+        <item>Closest Libraries</item>
+        <item>Closest Cyber Cafes</item>
+        <item>Closest Decor Shops</item>
+        <item>Closest Mechanic shops</item>
+        <item>Closest Post Office shops</item>
+        <item>Closest Herbalist centers</item>
+        <item>Closest Car wash</item>
+        <item>Closest Musuems</item>
+        <item>Closest Motels</item>
+        <item>closest Shaving Salons</item>
+    </string-array>
+    <string name="title_activity_site_presentation">Map</string>
+</resources>

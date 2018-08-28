@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="tk.tkctechnologies.pindexer.proximityindexer.Sites">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+<!-- android:theme="@style/AppTheme.AppBarOverlay"-->
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@android:color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_button"
+                    android:onClick="backButtonClicked"
+                    android:paddingBottom="25dp"
+                    android:paddingEnd="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="25dp"
+                    android:src="@drawable/ic_back" />
+
+                <TextView
+                    android:id="@+id/titleTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="19dp"
+                    android:text="New Site"
+                    android:textColor="@color/loginGradientStart"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/box_shadow" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Site Name (*):"
+                android:textColor="@color/loginGradientStart"
+                android:textSize="15sp"
+
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:hint="(max 30 characters)"
+                android:inputType="text"
+                android:paddingBottom="15dp"
+                android:paddingEnd="7dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:paddingStart="7dp"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Site Phone Number:"
+                android:textColor="@color/loginGradientStart"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:hint="(+237)"
+                android:inputType="phone"
+                android:paddingBottom="15dp"
+                android:paddingEnd="7dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:paddingStart="7dp"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Site Email:"
+                android:textColor="@color/loginGradientStart"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:hint="example@example.com"
+                android:inputType="textWebEmailAddress"
+                android:paddingBottom="15dp"
+                android:paddingEnd="7dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:paddingStart="7dp"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Website:"
+                android:textColor="@color/loginGradientStart"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:hint="www.example.com"
+                android:inputType="textWebEditText"
+                android:paddingBottom="15dp"
+                android:paddingEnd="7dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:paddingStart="7dp"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Working period (*):"
+                android:textColor="@color/loginGradientStart"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Monday:"
+                    android:textColor="@color/loginGradientStart"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="5dp"
+                    android:inputType="time"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="10dp"
+                    android:text="to"
+                    android:textColor="@color/loginGradientStart"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="5dp"
+                    android:inputType="time"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="true"
+                android:text="Same working hours for the whole week"
+                android:textColor="@color/colorAccent"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Tuesday:"
+                        android:textColor="@color/loginGradientStart"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="5dp"
+                        android:inputType="time"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="10dp"
+                        android:text="to"
+                        android:textColor="@color/loginGradientStart"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="5dp"
+                        android:inputType="time"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Wednesday:"
+                        android:textColor="@color/loginGradientStart"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="5dp"
+                        android:inputType="time"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="10dp"
+                        android:text="to "
+                        android:textColor="@color/loginGradientStart"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="5dp"
+                        android:inputType="time"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Thursday:"
+                        android:textColor="@color/loginGradientStart"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="5dp"
+                        android:inputType="time"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="10dp"
+                        android:text="to"
+                        android:textColor="@color/loginGradientStart"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="5dp"
+                        android:inputType="time"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Friday:"
+                        android:textColor="@color/loginGradientStart"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="5dp"
+                        android:inputType="time"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="10dp"
+                        android:text="to "
+                        android:textColor="@color/loginGradientStart"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="5dp"
+                        android:inputType="time"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Saturday:"
+                    android:textColor="@color/loginGradientStart"
+                    android:textSize="13sp" />
+
+                <EditText
+
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="5dp"
+                    android:inputType="time"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="10dp"
+                    android:text="to"
+                    android:textColor="@color/loginGradientStart"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="5dp"
+                    android:inputType="time"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Sunday:"
+                    android:textColor="@color/loginGradientStart"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="5dp"
+                    android:inputType="time"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="10dp"
+                    android:text="to "
+                    android:textColor="@color/loginGradientStart"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="5dp"
+                    android:inputType="time"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/cd1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="When was your site created?"
+                    android:textColor="@color/loginGradientStart"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cd1"
+                    android:text="When was your site created?"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/icon_button"
+                    android:padding="20dp"
+                    android:src="@drawable/ic_calendar" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:id="@+id/cd2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Site Image/Logo"
+                    android:textColor="@color/loginGradientStart"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cd2"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Select an image to appear on search"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/icon_button"
+                    android:padding="20dp"
+                    android:src="@drawable/ic_image" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:id="@+id/cd3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number of workers"
+                    android:textColor="@color/loginGradientStart"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cd3"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="How many workers work here?"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+
+                    android:inputType="number" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Site Description:"
+                android:textColor="@color/loginGradientStart"
+                android:textSize="15sp"
+
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Briefly in your own language, we will translate for you"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:maxLines="10"
+                android:minLines="6"
+                android:paddingBottom="15dp"
+                android:paddingEnd="7dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:paddingStart="7dp"
+                android:scrollbars="vertical"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="15sp" />
+            <!--
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:inputType="text" />-->
+            <TextView
+                android:id="@+id/cdX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Locating you..."
+                android:textColor="@color/loginGradientStart"
+                android:textSize="13sp"
+                android:layout_marginTop="19dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cdX"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Make sure you are in the correct location"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:layout_marginBottom="10dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Locate me now"
+                android:clickable="true"
+                android:background="@color/loginGradientStart"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="5dp"
+                android:onClick="localize"/>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tk.tkctechnologies.pindexer.proximityindexer.main">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/rel1">
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/et1"/>
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et2"
+        android:inputType="number"
+        android:layout_toRightOf="@+id/et1"
+        android:layout_toEndOf="@+id/et1"/>
+</RelativeLayout>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="SUMBIT"
+    android:layout_below="@id/rel1"
+    android:id="@+id/toaster"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/resp"
+        android:layout_below="@id/toaster"/>
+</RelativeLayout>

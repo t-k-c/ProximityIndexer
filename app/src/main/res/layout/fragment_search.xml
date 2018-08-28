@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context="tk.tkctechnologies.pindexer.proximityindexer.SearchFragment"
+    android:orientation="vertical"
+    android:background="#f0f0f0">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:inputType="text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:maxLines="1"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Search a domain ..."
+        android:textColorHint="@android:color/darker_gray"
+        android:background="@drawable/oval_edit_text"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"/>
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+<!--<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/domains" />
+
+    <include layout="@layout/domains" />
+    <include layout="@layout/domains" />
+    <include layout="@layout/domains" />
+
+
+</LinearLayout>-->
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/domainLv"
+    />
+
+</android.support.v4.widget.NestedScrollView>
+</LinearLayout>
